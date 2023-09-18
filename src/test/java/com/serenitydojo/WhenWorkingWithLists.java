@@ -18,11 +18,10 @@ public class WhenWorkingWithLists {
     // We can create a list containing a specified list of values
     @Test
     public void creatingAListOfValues() {
-        List<String> colors = null;
+        List<String> colors = Arrays.asList("red","green","blue");
 
         // TODO: Create an immutable list of Strings containing the values "red", "green" and "blue"
         //  using the Arrays.asList() method
-        colors = Arrays.asList("red","green","blue");
 
         assertThat(colors).containsExactly("red", "green", "blue");
     }
@@ -30,10 +29,10 @@ public class WhenWorkingWithLists {
     // We can add a value an empty list
     @Test
     public void addingAValueToAnEmptyList() {
-        List<String> colors = null;
+        List<String> colors = new ArrayList<>();
 
         // TODO: Create a new ArrayList, and add "red" and "green" this list
-        colors = new ArrayList<>();
+
         colors.add("red");
         colors.add("green");
 
